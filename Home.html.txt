@@ -1,6 +1,0 @@
-<!DOCTYPE html>
-<html>
-<header>
-Welcome to my website
-</header>
-</html>
