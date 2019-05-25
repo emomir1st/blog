@@ -30,14 +30,20 @@ a #threeline{
 	font-style: normal;
 }
 /*------------------------- menucanh ------------------------*/
-.menucanh {
-	display: block;
-	float: left;
+.menucanh.ra {
+	left: 0px;
+	background-color: #ce4718;
 }
 .menucanh {
 	height: 590px;
-	background-color: black;
+	background-color: #7b8846;
 	margin-left: -15px;
+	display: block;
+	float: left;
+	position: fixed;
+	z-index: 3;
+	transition: all 0.4s;
+	left: -140px;
 }
 .menucanh ul {
 	list-style:none;
@@ -58,9 +64,12 @@ a #threeline{
 	text-transform: uppercase;
 	display: block;
 	text-decoration: none;
-	text-align: center;
+	text-align: center; 
 	padding-top: 40px;
 }
+/*.menucanh ul li.bars {
+	background: url(images/bars.png) no-repeat 55px -57px ;
+}*/
 .menucanh ul li.selected.home a, .menucanh ul li.selected.home:hover a {
 	width: 140px;
 	background:url(../images/nav-icon.png) no-repeat 55px -57px #7b8846;
