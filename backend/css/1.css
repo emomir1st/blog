@@ -2,7 +2,7 @@
 body {
 	margin:0;
 	background-color:#ce4718;
-	font-family: 'AbelRegular';
+	font-family: 'Montserrat';
 	position:relative;
 }
 .body {
@@ -13,7 +13,6 @@ body {
 }
 h1, h3{
     display: block;
-    font-family: 'segoe ui';
     text-transform: uppercase;
     font-weight: bold;
     color: white;
@@ -23,9 +22,10 @@ a #threeline{
 }
 /*------------------------- Fonts ------------------------*/
 @font-face {
-	font-family: 'AbelRegular';
+	font-family: 'Montserrat';
 	src: url('../fonts/abel-regular-webfont.eot');
-	src: url('../fonts/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/abel-regular-webfont.woff') format('woff'),  url('../fonts/abel-regular-webfont.ttf') format('truetype'),  url('../fonts/abel-regular-webfont.svg#AbelRegular') format('svg');
+	src: url('../fonts/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/abel-regular-webfont.woff') format('woff'), 
+	 url('../fonts/abel-regular-webfont.ttf') format('truetype'),  url('../fonts/abel-regular-webfont.svg#AbelRegular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -33,6 +33,7 @@ a #threeline{
 .menucanh.ra {
 	left: 0px;
 	background-color: #ce4718;
+	transition: all 0.6s;
 }
 .menucanh {
 	height: 590px;
@@ -42,7 +43,7 @@ a #threeline{
 	float: left;
 	position: fixed;
 	z-index: 3;
-	transition: all 0.4s;
+	transition: all 0.6s;
 	left: -140px;
 }
 .menucanh ul {
@@ -57,7 +58,7 @@ a #threeline{
 }
 .menucanh ul li a {
 	color: #FFF;
-	font-family: AbelRegular;
+	font-family: Montserrat;
 	font-size: 18px;
 	letter-spacing: .04em;
 	line-height: 27px;
@@ -139,4 +140,20 @@ a #threeline{
 .logo {
     text-transform: uppercase;
     margin: -50px 0px 0px 400px;
+}
+.nutmenu {
+	position: fixed;
+	top: 6px;
+	left: 5px;
+	padding: 10px 15px;
+	background-color: rgba(0,0,0,0.54);
+}
+.avatar {
+	border-radius: 50%;
+    height: 34px;
+    width: 34px;
+}
+.name {
+	color: white;
+	text-decoration: none;
 }

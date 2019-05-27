@@ -9,11 +9,17 @@
 	 	$('.container-fluid').css({'height':docao});
 
  	})   
-})
 
-	//khi click vao nut menu
-	$('.nutquay').click(function(){
-		$('menucanh').addClass('ra');
+	$('.nutmenu').click(function(){
+		console.log('show responsive menu')
+		$('.menucanh').addClass('ra');
 		return false;
 	})
- 
+
+	$('#tat').click(function(){
+		console.log('close responsive menu')
+		$('.menucanh').removeClass('ra');
+		return false;
+	})	
+
+})
