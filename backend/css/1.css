@@ -36,7 +36,8 @@ a #threeline{
 	transition: all 0.6s;
 }
 .menucanh {
-	height: 590px;
+	width: 180px;
+	height: 620px;
 	background-color: #7b8846;
 	margin-left: -15px;
 	display: block;
@@ -44,7 +45,7 @@ a #threeline{
 	position: fixed;
 	z-index: 3;
 	transition: all 0.6s;
-	left: -140px;
+	left: -180px;
 }
 .menucanh ul {
 	list-style:none;
@@ -72,68 +73,68 @@ a #threeline{
 	background: url(images/bars.png) no-repeat 55px -57px ;
 }*/
 .menucanh ul li.selected.home a, .menucanh ul li.selected.home:hover a {
-	width: 140px;
-	background:url(../images/nav-icon.png) no-repeat 55px -57px #7b8846;
+	width: 180px;
+	background:url(../images/nav-icon.png) no-repeat 72px -81px #7b8846;
 	background-size: 23%;
 }
 .menucanh ul li.selected.roles a, .menucanh ul li.selected.roles:hover a {
-	width: 140px;
+	width: 180px;
 	background:url(../images/nav-icon.png) no-repeat 55px -57px #7b8846;
 	background-size: 23%;
 }
 .menucanh ul li.roles a {
-	width: 140px;
-	background:url(../images/nav-icon.png) no-repeat 55px -128px #cba200;
+	width: 180px;
+	background:url(../images/nav-icon.png) no-repeat 73px -168px #cba200;
 	background-size: 23%;
 }
 .menucanh ul li.selected.categories a, .menucanh ul li.selected.categories:hover a {
-	width: 140px;
+	width: 180px;
 	background:url(../images/nav-icon.png) no-repeat 33px -163px #7b8846;
 	background-size: 23%;
 }
 .menucanh ul li.categories a {
-	width: 140px;
-	background:url(../images/nav-icon.png) no-repeat 55px -271px #c0ac66;
+	width: 180px;
+	background:url(../images/nav-icon.png) no-repeat 73px -357px #c0ac66;
 	background-size: 23%;
 }
 .menucanh ul li.selected.posts a, .menucanh ul li.selected.posts:hover a {
-	width: 140px;
+	width: 180px;
 	background:url(../images/nav-icon.png) no-repeat 55px -57px #aec066;
 	background-size: 23%;
 }
 .menucanh ul li.posts a {
-	width: 140px;
-	background:url(../images/nav-icon.png) no-repeat 55px -409px #aec066;
+	width: 180px;
+	background:url(../images/nav-icon.png) no-repeat 71px -532px #aec066;
 	background-size: 23%;
 }
 .menucanh ul li.selected.users a, .menucanh ul li.selected.users:hover a {
-	width: 140px;
+	width: 180px;
 	background:url(../images/users.png) no-repeat 55px -57px #528846;
 	background-size: 37%;
 }
 .menucanh ul li.users a {
-	width: 140px;
-	background: url(../images/users.png) no-repeat 47px 6px #528846;
+	width: 180px;
+	background: url(../images/users.png) no-repeat 59px -1px #528846;
 	background-size: 37%;
 }
 .menucanh ul li.selected.files a, .menucanh ul li.selected.files:hover a {
-	width: 140px;
-	background:url(../images/files.png) no-repeat 55px -57px #dc8413;
+	width: 180px;
+	background:url(../images/files.png) no-repeat 58px -4px #dc8413;
 	background-size: 23%;
 }
 .menucanh ul li.files a {
-	width: 140px;
-	background: url(../images/files.png) no-repeat 47px 6px #dc8413;
+	width: 180px;
+	background: url(../images/files.png) no-repeat 56px -6px #dc8413;
 	background-size: 37%;
 }
 .menucanh ul li.selected.priviledges a, .menucanh ul li.selected.priviledges:hover a {
-	width: 140px;
+	width: 180px;
 	background:url(../images/priviledges.png) no-repeat 55px -57px #7b8846;
 	background-size: 23%;
 }
 .menucanh ul li.priviledges a {
-	width: 140px;
-	background: url(../images/priviledges.png) no-repeat 47px 6px #98a7a4;
+	width: 180px;
+	background: url(../images/priviledges.png) no-repeat 55px -9px #98a7a4;
 	background-size: 37%;
 }
 /*------------------------- Logo ------------------------*/
@@ -156,4 +157,12 @@ a #threeline{
 .name {
 	color: white;
 	text-decoration: none;
+}
+#tat{
+	color: gray;
+	margin-top: 5px;
+	float: right;
+	padding: 7px 8px 7px 8px;
+	background-color: rgba(0,0,0,0.54);
+	border-radius: 1px;
 }
