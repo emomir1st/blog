@@ -1,14 +1,15 @@
- $(function(){
- 	var docao = $(window).height();
- 	console.log(docao);
- 	$('.container-fluid').css({'height':docao});
+//Script for Menu Trasition 
+$(function(){
+	var docao = $(window).height();
+	console.log(docao);
+	$('.container-fluid').css({'height':docao});
 
- 	$(window).resize(function(){
-	 	var docao = $(window).height();
-	 	console.log(docao);
-	 	$('.container-fluid').css({'height':docao});
+	$(window).resize(function(){
+		var docao = $(window).height();
+		console.log(docao);
+		$('.container-fluid').css({'height':docao});
 
- 	})   
+	})   
 
 	$('.nutmenu').click(function(){
 		console.log('show responsive menu')
@@ -23,3 +24,4 @@
 	})	
 
 })
+
