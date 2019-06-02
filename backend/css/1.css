@@ -166,3 +166,5 @@ a #threeline{
 	background-color: rgba(0,0,0,0.54);
 	border-radius: 1px;
 }
+tr:hover{background-color:#EEE;
+		cursor: pointer}
