@@ -1,0 +1,44 @@
+*{margin: 0; padding: 0;}
+
+.danhsach {
+    position: absolute;
+    width: 225px;
+    font-size: 13px;
+    transition: 0.4s;
+    right: 3px;
+    opacity: 0;
+    visibility: hidden;
+    top: 40px;
+    right: 42px;
+    font-size: 19px;
+}
+
+.danhsach:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    width: 0;
+    height: 0;
+    border: 11px rgba(255, 215, 0, 0) solid;
+    border-bottom-color: white;
+    right: 8px;
+}
+
+.declick {transition: 0.4s;}
+
+.declick i.fa{
+    cursor: pointer;
+}
+.tamgiactrang {color:white;}
+.profile_ra {opacity:1; visibility: visible; z-index: 1; padding-left: 96px;}
+#than {
+    margin-top: 10px;
+}
+.breadcrumb {
+    padding: .75rem 13rem;
+    margin-bottom: -1rem;
+    list-style: none;
+    background-color: white;
+    border-radius: .25rem;
+    font-size: 20px;
+}
