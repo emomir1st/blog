@@ -83,8 +83,8 @@
 
 
 	</svg>
-	<div class="container-fluid" style="background-color:#cba200;">
-		<div class="row">
+	<div class="container-fluid" style="background-color:#5ca9d6;">
+		<div class="row" style="background: url(images/confetti.svg) repeat round center"">
 			<div class="col-sm-1">
 				<div class="menucanh">
 					<ul>
@@ -143,15 +143,15 @@
 								<!-- het col-sm-4 -->
 							</div>
 						</div>
-						<div class="container" style="background-color: white; color: #5C3820;">
+						<div class="container" style="background-color: white; color: #5C3820">
 							<div class="row" >
 								<div class="col-sm-4">
-									<h4 class="text-left" style="color: #5C3820; padding-top: 16px;">ROLES MANAGEMENT</h4>
+									<h4 class="text-left" style="color: #5C3820; padding-top: 16px;">FILES MANAGEMENT</h4>
 								</div>
 								<div class="col-sm-8" style="float: right;">		
 									<ol class="breadcrumb">
 										<li class="breadcrumb-item"><a href="#">Home</a></li>
-										<li class="breadcrumb-item active">Roles</li>
+										<li class="breadcrumb-item active">Files</li>
 									</ol>
 								</div>
 							</div>
@@ -159,9 +159,36 @@
 							<!-- Add button-->	
 							<div class="row">
 								<div class="col-sm-3">
-									<a href="#" class="btn btn-success" data-toggle="modal" data-target="#add">
-										<b><i class="fas fa-plus"></i> Add Role</b>
-									</a>								
+<!-- 									<a href="#" class="btn btn-success" data-toggle="modal" data-target="#add">
+										<b><i class="fas fa-plus"></i> Add File</b>
+									</a>	 -->	
+									<button type="button" class="btn btn-info" data-toggle="modal" data-target="#uploadModal">Upload file</button>
+
+<!-- Modal -->
+<div id="uploadModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">File upload form</h4>
+      </div>
+      <div class="modal-body">
+        <!-- Form -->
+        <form method='post' action='' enctype="multipart/form-data">
+          Select file : <input type='file' name='file' id='file' class='form-control' ><br>
+          <input type='button' class='btn btn-info' value='Upload' id='upload'>
+        </form>
+
+        <!-- Preview-->
+        <div id='preview'></div>
+      </div>
+ 
+    </div>
+
+  </div>
+</div>						
 								</div>
 							</div>
 							<br>
@@ -187,24 +214,31 @@
 																	<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
 																</div>
 																<div class="folder__preview folder__preview--thumbs">
-																	<img class="folder__thumb" src="img/user1.svg" />
-																	<img class="folder__thumb" src="img/user2.svg" />
-																	<img class="folder__thumb" src="img/user3.svg" />
-																	<img class="folder__thumb" src="img/user4.svg" />
-																	<img class="folder__thumb" src="img/user5.svg" />
+																	<img class="folder__thumb" src="images/file_1.svg" />
+																	<img class="folder__thumb" src="images/file_2.svg" />
+																	<img class="folder__thumb" src="images/file_3.svg" />
+																	<img class="folder__thumb" src="images/file_4.svg" />
+																	<img class="folder__thumb" src="images/file_5.svg" />
 																</div>
 																<div class="folder__icon-img folder__icon-img--cover">
 																	<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
 																	<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-users"></use></svg>
 																</div>
 															</div>
-															<h3 class="folder__caption">Devi</h3>
+															<h3 class="folder__caption">HTML </h3>
 														</div>
 													</div> 
 												</div><!-- /grid-->
 											</section></div></div>
 											</div>
 											<div class="col-sm-2">
+												<div class="row">
+													<div class="col-sm-8 text-right">
+													<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-sm-12">
 											<section class="content content--devi">
 
 												<div class="grid">
@@ -215,146 +249,410 @@
 																	<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
 																</div>
 																<div class="folder__preview folder__preview--thumbs">
-																	<img class="folder__thumb" src="img/user1.svg" />
-																	<img class="folder__thumb" src="img/user2.svg" />
-																	<img class="folder__thumb" src="img/user3.svg" />
-																	<img class="folder__thumb" src="img/user4.svg" />
-																	<img class="folder__thumb" src="img/user5.svg" />
+																	<img class="folder__thumb" src="images/file_1.svg" />
+																	<img class="folder__thumb" src="images/file_2.svg" />
+																	<img class="folder__thumb" src="images/file_3.svg" />
+																	<img class="folder__thumb" src="images/file_4.svg" />
+																	<img class="folder__thumb" src="images/file_5.svg" />
 																</div>
 																<div class="folder__icon-img folder__icon-img--cover">
 																	<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
 																	<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-users"></use></svg>
 																</div>
 															</div>
-															<h3 class="folder__caption">Devi</h3>
+															<h3 class="folder__caption">js</h3>
 														</div>
 													</div> 
 												</div><!-- /grid-->
-											</section>
-											</div>
-																						<div class="col-sm-2">
-											<section class="content content--devi">
-
-												<div class="grid">
-													<div class="grid__item">
-														<div class="folder folder--devi">
-															<div class="folder__icon">
-																<div class="folder__icon-img folder__icon-img--back">
-																	<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
-																</div>
-																<div class="folder__preview folder__preview--thumbs">
-																	<img class="folder__thumb" src="img/user1.svg" />
-																	<img class="folder__thumb" src="img/user2.svg" />
-																	<img class="folder__thumb" src="img/user3.svg" />
-																	<img class="folder__thumb" src="img/user4.svg" />
-																	<img class="folder__thumb" src="img/user5.svg" />
-																</div>
-																<div class="folder__icon-img folder__icon-img--cover">
-																	<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
-																	<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-users"></use></svg>
-																</div>
-															</div>
-															<h3 class="folder__caption">Devi</h3>
-														</div>
-													</div> 
-												</div><!-- /grid-->
-											</section>
-											</div>
-																						<div class="col-sm-2">
-						<section class="content content--ravi">
-				<div class="grid">
-
-					<div class="grid__item">
-						<div class="folder folder--ravi">
-							<div class="folder__icon folder__icon--perspective">
-								<div class="folder__feedback"></div>
-								<div class="folder__icon-img folder__icon-img--back">
-									<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
-								</div>
-								<div class="folder__icon-deco"></div>
-								<div class="folder__preview folder__preview--thumbs">
-									<img class="folder__thumb" src="img/photo13.png" />
-									<img class="folder__thumb" src="img/photo15.png" />
-									<img class="folder__thumb" src="img/photo14.png" />
-								</div>
-								<div class="folder__icon-img folder__icon-img--cover">
-									<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
-									<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-padlock"></use></svg>
-								</div>
-							</div>
-							<h3 class="folder__caption">Ravi</h3>
-						</div>
-					</div>
-					
-				</div><!-- /grid-->
-			</section>
-											</div>
-<div class="col-sm-2">
-						<section class="content content--ravi">
-				<div class="grid">
-
-					<div class="grid__item">
-						<div class="folder folder--ravi">
-							<div class="folder__icon folder__icon--perspective">
-								<div class="folder__feedback"></div>
-								<div class="folder__icon-img folder__icon-img--back">
-									<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
-								</div>
-								<div class="folder__icon-deco"></div>
-								<div class="folder__preview folder__preview--thumbs">
-									<img class="folder__thumb" src="img/photo13.png" />
-									<img class="folder__thumb" src="img/photo15.png" />
-									<img class="folder__thumb" src="img/photo14.png" />
-								</div>
-								<div class="folder__icon-img folder__icon-img--cover">
-									<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
-									<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-padlock"></use></svg>
-								</div>
-							</div>
-							<h3 class="folder__caption">Ravi</h3>
-						</div>
-					</div>
-					
-				</div><!-- /grid-->
-			</section>
+											</section></div></div>
 											</div>
 											<div class="col-sm-2">
-						<section class="content content--ravi">
-				<div class="grid">
+												<div class="row">
+													<div class="col-sm-8 text-right">
+													<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-sm-12">
+											<section class="content content--devi">
 
-					<div class="grid__item">
-						<div class="folder folder--ravi">
-							<div class="folder__icon folder__icon--perspective">
-								<div class="folder__feedback"></div>
-								<div class="folder__icon-img folder__icon-img--back">
-									<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
-								</div>
-								<div class="folder__icon-deco"></div>
-								<div class="folder__preview folder__preview--thumbs">
-									<img class="folder__thumb" src="img/photo13.png" />
-									<img class="folder__thumb" src="img/photo15.png" />
-									<img class="folder__thumb" src="img/photo14.png" />
-								</div>
-								<div class="folder__icon-img folder__icon-img--cover">
-									<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
-									<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-padlock"></use></svg>
-								</div>
-							</div>
-							<h3 class="folder__caption">Ravi</h3>
-						</div>
-					</div>
-					
-				</div><!-- /grid-->
-			</section>
+												<div class="grid">
+													<div class="grid__item">
+														<div class="folder folder--devi">
+															<div class="folder__icon">
+																<div class="folder__icon-img folder__icon-img--back">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
+																</div>
+																<div class="folder__preview folder__preview--thumbs">
+																	<img class="folder__thumb" src="images/file_1.svg" />
+																	<img class="folder__thumb" src="images/file_2.svg" />
+																	<img class="folder__thumb" src="images/file_3.svg" />
+																	<img class="folder__thumb" src="images/file_4.svg" />
+																	<img class="folder__thumb" src="images/file_5.svg" />
+																</div>
+																<div class="folder__icon-img folder__icon-img--cover">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
+																	<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-users"></use></svg>
+																</div>
+															</div>
+															<h3 class="folder__caption">JQuery</h3>
+														</div>
+													</div> 
+												</div><!-- /grid-->
+											</section></div></div>
+											</div>
+											<div class="col-sm-2">
+												<div class="row">
+													<div class="col-sm-8 text-right">
+													<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-sm-12">
+											<section class="content content--devi">
+
+												<div class="grid">
+													<div class="grid__item">
+														<div class="folder folder--devi">
+															<div class="folder__icon">
+																<div class="folder__icon-img folder__icon-img--back">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
+																</div>
+																<div class="folder__preview folder__preview--thumbs">
+																	<img class="folder__thumb" src="images/file_1.svg" />
+																	<img class="folder__thumb" src="images/file_2.svg" />
+																	<img class="folder__thumb" src="images/file_3.svg" />
+																	<img class="folder__thumb" src="images/file_4.svg" />
+																	<img class="folder__thumb" src="images/file_5.svg" />
+																</div>
+																<div class="folder__icon-img folder__icon-img--cover">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
+																	<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-users"></use></svg>
+																</div>
+															</div>
+															<h3 class="folder__caption">API</h3>
+														</div>
+													</div> 
+												</div><!-- /grid-->
+											</section></div></div>
+											</div>
+											<div class="col-sm-2">
+												<div class="row">
+													<div class="col-sm-8 text-right">
+													<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-sm-12">
+											<section class="content content--devi">
+
+												<div class="grid">
+													<div class="grid__item">
+														<div class="folder folder--devi">
+															<div class="folder__icon">
+																<div class="folder__icon-img folder__icon-img--back">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
+																</div>
+																<div class="folder__preview folder__preview--thumbs">
+																	<img class="folder__thumb" src="images/file_1.svg" />
+																	<img class="folder__thumb" src="images/file_2.svg" />
+																	<img class="folder__thumb" src="images/file_3.svg" />
+																	<img class="folder__thumb" src="images/file_4.svg" />
+																	<img class="folder__thumb" src="images/file_5.svg" />
+																</div>
+																<div class="folder__icon-img folder__icon-img--cover">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
+																	<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-users"></use></svg>
+																</div>
+															</div>
+															<h3 class="folder__caption">JSON</h3>
+														</div>
+													</div> 
+												</div><!-- /grid-->
+											</section></div></div>
+											</div>
+											<div class="col-sm-2">
+												<div class="row">
+													<div class="col-sm-8 text-right">
+													<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-sm-12">
+											<section class="content content--devi">
+
+												<div class="grid">
+													<div class="grid__item">
+														<div class="folder folder--devi">
+															<div class="folder__icon">
+																<div class="folder__icon-img folder__icon-img--back">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
+																</div>
+																<div class="folder__preview folder__preview--thumbs">
+																	<img class="folder__thumb" src="images/file_1.svg" />
+																	<img class="folder__thumb" src="images/file_2.svg" />
+																	<img class="folder__thumb" src="images/file_3.svg" />
+																	<img class="folder__thumb" src="images/file_4.svg" />
+																	<img class="folder__thumb" src="images/file_5.svg" />
+																</div>
+																<div class="folder__icon-img folder__icon-img--cover">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
+																	<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-users"></use></svg>
+																</div>
+															</div>
+															<h3 class="folder__caption">UI/ux</h3>
+														</div>
+													</div> 
+												</div><!-- /grid-->
+											</section></div></div>
+											</div>
+										</div>
+										<!-- END ROW 1 -->
+																				<div class="row">
+											<div class="col-sm-2">
+												<div class="row">
+													<div class="col-sm-8 text-right">
+													<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-sm-12">
+											<section class="content content--devi">
+
+												<div class="grid">
+													<div class="grid__item">
+														<div class="folder folder--devi">
+															<div class="folder__icon">
+																<div class="folder__icon-img folder__icon-img--back">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
+																</div>
+																<div class="folder__preview folder__preview--thumbs">
+																	<img class="folder__thumb" src="images/file_1.svg" />
+																	<img class="folder__thumb" src="images/file_2.svg" />
+																	<img class="folder__thumb" src="images/file_3.svg" />
+																	<img class="folder__thumb" src="images/file_4.svg" />
+																	<img class="folder__thumb" src="images/file_5.svg" />
+																</div>
+																<div class="folder__icon-img folder__icon-img--cover">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
+																	<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-users"></use></svg>
+																</div>
+															</div>
+															<h3 class="folder__caption">DOM</h3>
+														</div>
+													</div> 
+												</div><!-- /grid-->
+											</section></div></div>
+											</div>
+											<div class="col-sm-2">
+												<div class="row">
+													<div class="col-sm-8 text-right">
+													<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-sm-12">
+											<section class="content content--devi">
+
+												<div class="grid">
+													<div class="grid__item">
+														<div class="folder folder--devi">
+															<div class="folder__icon">
+																<div class="folder__icon-img folder__icon-img--back">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
+																</div>
+																<div class="folder__preview folder__preview--thumbs">
+																	<img class="folder__thumb" src="images/file_1.svg" />
+																	<img class="folder__thumb" src="images/file_2.svg" />
+																	<img class="folder__thumb" src="images/file_3.svg" />
+																	<img class="folder__thumb" src="images/file_4.svg" />
+																	<img class="folder__thumb" src="images/file_5.svg" />
+																</div>
+																<div class="folder__icon-img folder__icon-img--cover">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
+																	<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-users"></use></svg>
+																</div>
+															</div>
+															<h3 class="folder__caption">CMS</h3>
+														</div>
+													</div> 
+												</div><!-- /grid-->
+											</section></div></div>
+											</div>
+											<div class="col-sm-2">
+												<div class="row">
+													<div class="col-sm-8 text-right">
+													<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-sm-12">
+											<section class="content content--devi">
+
+												<div class="grid">
+													<div class="grid__item">
+														<div class="folder folder--devi">
+															<div class="folder__icon">
+																<div class="folder__icon-img folder__icon-img--back">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
+																</div>
+																<div class="folder__preview folder__preview--thumbs">
+																	<img class="folder__thumb" src="images/file_1.svg" />
+																	<img class="folder__thumb" src="images/file_2.svg" />
+																	<img class="folder__thumb" src="images/file_3.svg" />
+																	<img class="folder__thumb" src="images/file_4.svg" />
+																	<img class="folder__thumb" src="images/file_5.svg" />
+																</div>
+																<div class="folder__icon-img folder__icon-img--cover">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
+																	<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-users"></use></svg>
+																</div>
+															</div>
+															<h3 class="folder__caption">JVM</h3>
+														</div>
+													</div> 
+												</div><!-- /grid-->
+											</section></div></div>
+											</div>
+											<div class="col-sm-2">
+												<div class="row">
+													<div class="col-sm-8 text-right">
+													<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-sm-12">
+											<section class="content content--devi">
+
+												<div class="grid">
+													<div class="grid__item">
+														<div class="folder folder--devi">
+															<div class="folder__icon">
+																<div class="folder__icon-img folder__icon-img--back">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
+																</div>
+																<div class="folder__preview folder__preview--thumbs">
+																	<img class="folder__thumb" src="images/file_1.svg" />
+																	<img class="folder__thumb" src="images/file_2.svg" />
+																	<img class="folder__thumb" src="images/file_3.svg" />
+																	<img class="folder__thumb" src="images/file_4.svg" />
+																	<img class="folder__thumb" src="images/file_5.svg" />
+																</div>
+																<div class="folder__icon-img folder__icon-img--cover">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
+																	<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-users"></use></svg>
+																</div>
+															</div>
+															<h3 class="folder__caption">PSRF1</h3>
+														</div>
+													</div> 
+												</div><!-- /grid-->
+											</section></div></div>
+											</div>
+											<div class="col-sm-2">
+												<div class="row">
+													<div class="col-sm-8 text-right">
+													<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-sm-12">
+											<section class="content content--devi">
+
+												<div class="grid">
+													<div class="grid__item">
+														<div class="folder folder--devi">
+															<div class="folder__icon">
+																<div class="folder__icon-img folder__icon-img--back">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
+																</div>
+																<div class="folder__preview folder__preview--thumbs">
+																	<img class="folder__thumb" src="images/file_1.svg" />
+																	<img class="folder__thumb" src="images/file_2.svg" />
+																	<img class="folder__thumb" src="images/file_3.svg" />
+																	<img class="folder__thumb" src="images/file_4.svg" />
+																	<img class="folder__thumb" src="images/file_5.svg" />
+																</div>
+																<div class="folder__icon-img folder__icon-img--cover">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
+																	<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-users"></use></svg>
+																</div>
+															</div>
+															<h3 class="folder__caption">PSRF2</h3>
+														</div>
+													</div> 
+												</div><!-- /grid-->
+											</section></div></div>
+											</div>
+											<div class="col-sm-2">
+												<div class="row">
+													<div class="col-sm-8 text-right">
+													<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-sm-12">
+											<section class="content content--devi">
+
+												<div class="grid">
+													<div class="grid__item">
+														<div class="folder folder--devi">
+															<div class="folder__icon">
+																<div class="folder__icon-img folder__icon-img--back">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-folderback"></use></svg>
+																</div>
+																<div class="folder__preview folder__preview--thumbs">
+																	<img class="folder__thumb" src="images/file_1.svg" />
+																	<img class="folder__thumb" src="images/file_2.svg" />
+																	<img class="folder__thumb" src="images/file_3.svg" />
+																	<img class="folder__thumb" src="images/file_4.svg" />
+																	<img class="folder__thumb" src="images/file_5.svg" />
+																</div>
+																<div class="folder__icon-img folder__icon-img--cover">
+																	<svg class="folder__icon-svg"><use xlink:href="#icon-foldercover"></use></svg>
+																	<svg class="folder__icon-svg folder__icon-svg--deco"><use xlink:href="#icon-users"></use></svg>
+																</div>
+															</div>
+															<h3 class="folder__caption">Snippet</h3>
+														</div>
+													</div> 
+												</div><!-- /grid-->
+											</section></div></div>
+											</div>
+										</div>
+										<br><br>
+
+									</div>
+
+										</div>
+										<div class="row">
+											<div class="col-sm-12 text-center">
+												<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 											</div>
 										</div>
 									</div>
-
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
+
 						<!-- ENd slide -->
 						<script src="js/anime.min.js"></script>
 						<script src="js/charming.min.js"></script>
