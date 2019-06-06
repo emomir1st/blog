@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nut {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    /* background: black; */
+    height: 40px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.nut .trai,.nut .phai {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: lightblue;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0;
+}
+.nut .phai {
+    float: right;
+}
+
+.motslide img {
+    width: 100%;
+}
+
+.motslide {
+    width: 200px;
+    font-family: segoe ui light;
+    font-size: 13px;
+}
+.slides {
+    width: 1000px;
+    height: 200px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+.noidungslide {
+    width: 2000px;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+}
+
+.nut .active{
+    opacity: 1;
+}
+.noidungslide.truotSang {
+    transition: 0.4s;
+    /* margin-left:-1000px; */
+    transform: translateX(-1000px);
+}
+.noidungslide.quaylai {
+    transition: 0.4s;
+    /* margin-left:-1000px; */
+    transform: translateX(0px);
+}
