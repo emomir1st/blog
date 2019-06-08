@@ -20,7 +20,6 @@
 <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/regular.js" integrity="sha384-iFYyWQkY/Zvsdq3IIxRJI2FBoXPj6g73ok7rIH3sZGulA7E5PvFqB5BOELomUuyh" crossorigin="anonymous"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/brands.js" integrity="sha384-GtvEzzhN52RvAD7CnSR7TcPw555abR8NK28tAqa/GgIDk59o0TsaK6FHglLstzCf" crossorigin="anonymous"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/fontawesome.js" integrity="sha384-Ia7KZbX22R7DDSbxNmxHqPQ15ceNzg2U4h5A8dy3K47G2fV1k658BTxXjp7rdhXa" crossorigin="anonymous"></script>
-<script src="js/5.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"><link rel="shortcut icon" href="favicon.ico">
 <!-- bdau svg -->
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,700" rel="stylesheet">
@@ -173,7 +172,7 @@ C0.6,18.8,0,19.7,0,20.8v1.2h5.8v-1.3C5.8,19.4,6.5,18.3,7.5,17.7z"/>
 <hr>
 <!-- Add button-->	
 <div class="row">
-<div class="col-sm-2">
+<div class="col-sm-3">
 <!-- 									<a href="#" class="btn btn-success" data-toggle="modal" data-target="#add">
 <b><i class="fas fa-plus"></i> Add File</b>
 </a>	 -->	
@@ -193,7 +192,7 @@ C0.6,18.8,0,19.7,0,20.8v1.2h5.8v-1.3C5.8,19.4,6.5,18.3,7.5,17.7z"/>
         <form style="border: 2px dashed #0087F7; border-radius: 5px; background: white; padding: 25px 25px 25px 25px" action="/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="addHtmlFile()" >Save changes</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="addHtmlFile();">Save changes</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -201,18 +200,19 @@ C0.6,18.8,0,19.7,0,20.8v1.2h5.8v-1.3C5.8,19.4,6.5,18.3,7.5,17.7z"/>
 </div>
 					
 </div>
-<div class="col-sm-10">
-	<div class="row">
-<div class="alert alert-success" role="alert" id ="save">
-Success! You have added new folder. 
-</div>
-</div>
-</div>
+
 </div>
 <br>
-
+<div class="row">
+	<div class="col-sm-11"><div class="alert alert-success" id="save" role="alert" >
+	&nbsp Success! <br> 
+	&nbsp You have added new folder. 
+</div></div>
+	
+</div>
+<br>
+<div class="row">
 <div class="col-sm-12">	
-
 <!-- SLides -->
 <div class="row">
 <div class="col-sm-2">
@@ -907,5 +907,5 @@ new DeviFx(document.querySelector('.content--devi .folder--devi'));
 <script src="js/files.js"></script>		
 <script src="js/bacham.js"></script>
 <script src="js/dropzone.js"></script>
-
+<script src="js/5.js"></script>
 </body>
