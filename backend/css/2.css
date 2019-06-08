@@ -42,3 +42,9 @@
     border-radius: .25rem;
     font-size: 20px;
 }
+.alert{
+    display: none;
+}
+.huy{
+    display: block;
+}

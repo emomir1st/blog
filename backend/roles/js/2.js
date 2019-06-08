@@ -66,6 +66,8 @@ table.rows[i].onclick = function()
         table.rows[rIndex].cells[2].innerHTML = created_at;
         table.rows[rIndex].cells[3].innerHTML = updated_at;
     	}
+      var alert = document.getElementById('sua');
+      alert.classList.toggle('huy');
     }
 
     function removeSelectedRow()
