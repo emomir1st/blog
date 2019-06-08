@@ -15,11 +15,11 @@ time = document.getElementById("time").value,
 day = document.getElementById("day").value;
 
 if(no === ""){
-alert("Role Name Connot Be Empty");
+alert("Invalid Number");
 isEmpty = true;
 }
 else if(roleName === ""){
-   alert("Number Connot Be Empty");
+   alert("RoleName Connot Be Empty");
    isEmpty = true;
 }
 else if(time === ""){
