@@ -59,7 +59,7 @@ function addHtmlTableRow()
   cell4.innerHTML = day;
   cell5.innerHTML = "<a class='btn btn-primary'><i class='fas fa-pencil-alt' style='color:white'></i></a> <a class='btn btn-danger'><i class='fas fa-trash-alt' style='color:white'></i></a>";
   var alert = document.getElementById('themmoi');
-  alert.classList.toggle('huy');
+  alert.classList.toggle('alert');
  // call the function to set the event to the new row
  selectedRowToInput();
 }
