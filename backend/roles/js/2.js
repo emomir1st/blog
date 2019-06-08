@@ -80,4 +80,6 @@ table.rows[i].onclick = function()
      document.getElementById("created_at").value = "";
      document.getElementById("updated_at").value = "";
  }
+ var alert = document.getElementById('xoa');
+      alert.classList.toggle('huy');
 }
