@@ -48,3 +48,20 @@
 .huy{
     display: block;
 }
+.nutbacham_noidung{
+    position: absolute;
+    width: 83px;
+    font-size: 13px;
+    right: 3px;
+    opacity: 0;
+    visibility: hidden;
+    top: 17em;
+    right: -21em;
+    font-size: 13px;
+    z-index: 1;
+
+}
+.hienthi_bacham {
+    opacity: 1;
+    visibility: visible;
+}
