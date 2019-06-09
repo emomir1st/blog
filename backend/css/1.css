@@ -65,7 +65,9 @@ a #threeline{
 	display: block;
 	text-decoration: none;
 	text-align: center; 
-	padding-top: 40px;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	font-weight: 500;
 }
 /*.menucanh ul li.bars {
 	background: url(images/bars.png) no-repeat 55px -57px ;
@@ -132,7 +134,7 @@ a #threeline{
 }
 .menucanh ul li.priviledges a {
 	width: 180px;
-	background-color:  #98a7a4;
+	background-color: #98a7a4;
 	background-size: 37%;
 }
 /*------------------------- Logo ------------------------*/
