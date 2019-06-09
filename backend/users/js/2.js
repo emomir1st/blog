@@ -9,7 +9,7 @@ console.log(action);
 function checkEmptyInput()
 {
   var isEmpty = false,
-  number = document.getElementById("number").value,
+  email = document.getElementById("email").value,
   role = document.getElementById("role").value,
   created_at = document.getElementById("created_at").value,
   updated_at = document.getElementById("updated_at").value;
@@ -18,8 +18,8 @@ function checkEmptyInput()
     alert("Role Name Connot Be Empty");
     isEmpty = true;
   }
-  else if(number === ""){
-   alert("Number Connot Be Empty");
+  else if(email === ""){
+   alert("Email Connot Be Empty");
    isEmpty = true;
  }
  else if(created_at === ""){
@@ -45,7 +45,7 @@ function selectedRowToInput()
        // get the seected row index
        rIndex = this.rowIndex;
        console.log(rIndex);
-       document.getElementById("number").value = this.cells[0].innerHTML;
+       document.getElementById("email").value = this.cells[0].innerHTML;
        document.getElementById("role").value = this.cells[1].innerHTML;
        document.getElementById("created_at").value = this.cells[2].innerHTML;
        document.getElementById("updated_at").value = this.cells[3].innerHTML;
@@ -56,12 +56,12 @@ function selectedRowToInput()
 
  function editHtmlTbleSelectedRow()
  {
-  var number = document.getElementById("number").value,
+  var email = document.getElementById("email").value,
   role = document.getElementById("role").value,
   created_at = document.getElementById("created_at").value,
   updated_at = document.getElementById("updated_at").value;   
   if(!checkEmptyInput()){
-    table.rows[rIndex].cells[0].innerHTML = number;
+    table.rows[rIndex].cells[0].innerHTML = email;
     table.rows[rIndex].cells[1].innerHTML = role;
     table.rows[rIndex].cells[2].innerHTML = created_at;
     table.rows[rIndex].cells[3].innerHTML = updated_at;
@@ -72,14 +72,6 @@ function selectedRowToInput()
 
 function removeSelectedRow()
 {
- {
-   table.deleteRow(rIndex);
-     // clear input text
-     document.getElementById("number").value = "";
-     document.getElementById("role").value = "";
-     document.getElementById("created_at").value = "";
-     document.getElementById("updated_at").value = "";
-   }
    var alert = document.getElementById('xoa');
    alert.classList.toggle('huy');
  }
