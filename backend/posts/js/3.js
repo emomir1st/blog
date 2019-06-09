@@ -9,25 +9,24 @@ console.log(action);
 function checkEmptyInput()
 {
 var isEmpty = false,
-addTitle = document.getElementById("addTitle").value,
-addCate = document.getElementById("addCate").value,
-addMode = document.getElementById("addMode").value,
-addContent = document.getElementById("addContent").value;
-addFile = document.getElementById("addFile").value;
+no = document.getElementById("no").value,
+cate = document.getElementById("cate").value,
+co = document.getElementById("co").value,
+mode = document.getElementById("mode").value;
 
-if(addTitle === ""){
-alert("Title Cannot Be Empty");
+if(no === ""){
+alert("no Cannot Be Empty");
 isEmpty = true;
 }
-else if(addCate === ""){
+else if(cate === ""){
    alert("Category Connot Be Empty");
    isEmpty = true;
 }
-else if(addMode === ""){
+else if(mode === ""){
    alert("Publication Mode Connot Be Empty");
    isEmpty = true;
 }
-else if(addContent === ""){
+else if(co === ""){
    alert("Content Cannot Be Empty");
    isEmpty = true;
 }
@@ -50,18 +49,17 @@ function addHtmlTableRow()
   cell5 = newRow.insertCell(4),
   cell6 = newRow.insertCell(5)
   
-  addTitle = document.getElementById("addTitle").value,
- 	addCate = document.getElementById("addCate").value;
-  addMode = document.getElementById("addMode").value,
-  addContent = document.getElementById("addContent").value;
-  addFile = document.getElementById("addFile").value;
+  addno = document.getElementById("no").value,
+ 	addCate = document.getElementById("cate").value,
+  addMode = document.getElementById("mode").value,
+  addco = document.getElementById("co").value;
   // console.log(no);
   // console.log(roleName);
-  cell1.innerHTML = addTitle; 
- 	cell2.innerHTML = addCate;
+  cell1.innerHTML = "2"
+ 	cell2.innerHTML = addno;
   cell3.innerHTML = addMode;
-  cell4.innerHTML = addContent;
-  cell5.innerHTML = addContent;
+  cell4.innerHTML = addCate;
+  cell5.innerHTML = addco;
   cell6.innerHTML = "<a class='btn btn-primary'><i class='fas fa-pencil-alt' style='color:white'></i></a> <a class='btn btn-danger'><i class='fas fa-trash-alt' style='color:white'></i></a>";
   var alert = document.getElementById('themmoi');
   alert.classList.toggle('huy');

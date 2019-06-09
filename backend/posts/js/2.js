@@ -9,14 +9,13 @@ console.log(action);
 function checkEmptyInput()
 {
 var isEmpty = false,
-title = document.getElementById("title").value,
+no = document.getElementById("no").value,
 cate = document.getElementById("cate").value,
-mode = document.getElementById("mode").value,
-content = document.getElementById("content").value,
-file = document.getElementById("file").value;
+co = document.getElementById("co").value,
+mode = document.getElementById("mode").value;
 
-if(title === ""){
-alert("Title Cannot Be Empty");
+if(no === ""){
+alert("no Cannot Be Empty");
 isEmpty = true;
 }
 else if(cate === ""){
@@ -27,7 +26,7 @@ else if(mode === ""){
    alert("Publication Mode Cannot Be Empty");
    isEmpty = true;
 }
-else if(content === ""){
+else if(co === ""){
    alert("Content Cannot Be Empty");
    isEmpty = true;
 }
@@ -47,11 +46,10 @@ table.rows[i].onclick = function()
        // get the seected row index
        rIndex = this.rowIndex;
        console.log(rIndex);
-       document.getElementById("title").value = this.cells[0].innerHTML;
+       document.getElementById("no").value = this.cells[0].innerHTML;
        document.getElementById("cate").value = this.cells[1].innerHTML;
        document.getElementById("mode").value = this.cells[2].innerHTML;
-       document.getElementById("content").value = this.cells[3].innerHTML;
-      document.getElementById("file").value = this.cells[4].innerHTML;
+       document.getElementById("co").value = this.cells[3].innerHTML;
       };
      }
     }
@@ -59,20 +57,20 @@ table.rows[i].onclick = function()
 
     function editHtmlTbleSelectedRow()
     {
-      var title = document.getElementById("title").value,
+      var no = document.getElementById("no").value,
           cate = document.getElementById("cate").value,
           mode = document.getElementById("mode").value,
-         content = document.getElementById("content").value;   
-         file = document.getElementById("file").value;
+         co = document.getElementById("co").value;   
 
     	if(!checkEmptyInput()){
-    		table.rows[rIndex].cells[0].innerHTML = title;
+    		table.rows[rIndex].cells[0].innerHTML = no;
         table.rows[rIndex].cells[1].innerHTML = cate;
         table.rows[rIndex].cells[2].innerHTML = mode;
-        table.rows[rIndex].cells[3].innerHTML = content;
+        table.rows[rIndex].cells[3].innerHTML = co;
+        var alert = document.getElementById('sua');
+        alert.classList.toggle('huy');
     	}
-      var alert = document.getElementById('sua');
-      alert.classList.toggle('huy');
+      
     }
 
     function removeSelectedRow()
@@ -80,11 +78,10 @@ table.rows[i].onclick = function()
  {
      table.deleteRow(rIndex);
      // clear input text
-     document.getElementById("title").value = "";
+     document.getElementById("no").value = "";
      document.getElementById("cate").value = "";
      document.getElementById("mode").value = "";
-     document.getElementById("content").value = "";
-     document.getElementById("file").value = "";
+     document.getElementById("co").value = "";
  }
  var alert = document.getElementById('xoa');
       alert.classList.toggle('huy');
