@@ -24,6 +24,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
 	<link rel="stylesheet" type="text/css" href="css/cs-skin-elastic.css" />
+	<style>
+		#giaubang{
+			display: none;
+		}		
+	</style>
+	<script>
+	function myFunction() {
+	  location.replace("https://pdm14.github.io/blog/backend/priviledges/repriviledges.html")
+	}
+	function admin() {
+	  location.replace("https://pdm14.github.io/blog/backend/priviledges/priviledges.html")
+	}
+	</script>
 </head>
 <body>
 
@@ -102,20 +115,19 @@
 							<div class="row">
 								<div class="col-sm-10">				
 									<section>
-										<select class="cs-select cs-skin-elastic">
+										<select  class="cs-select cs-skin-elastic">
 											<option value="" disabled selected>Choose a group</option>
-											<option value="france">Administrator</option>
-											<option value="brazil">Editor</option>
-											<option value="argentina">Publisher</option>
-											<option value="south-africa">Technical Admin</option>
-											<option value="argentina">User Approval</option>
-											<option value="south-africa">Super User</option>
-										</select>
-									</section></div>		
+											<option onclick="admin()" value="france">Administrator</option>
+											<option onclick="myFunction()" value="brazil">Editor</option>
+											<option onclick="myFunction()" value="argentina">Publisher</option>
+											<option onclick="myFunction()" value="south-africa">Technical Admin</option>
+											<option onclick="myFunction()" value="argentina">User Approval</option>
+											<option onclick="myFunction()" value="south-africa">Super User</option>
+										</select>									</section></div>		
 								</div>
 								<br>
-								<div class="row">
-									<div class="col-sm-12 col-md-push-1 ">		
+								<div class="row" id="giaubang">
+									<div class="col-sm-12 col-md-push-1">		
 										<table class="table" id="table">
 											<thead>
 												<tr>
@@ -201,11 +213,11 @@
 				<!-- bat dau thu svg -->
 
 				<!-- Script -->
-				<script src="js/2.js"></script>
 				<script src="js/3.js"></script>
 				<script src="js/4.js"></script>
 				<script src="js/classie.js"></script>
 				<script src="js/selectFx.js"></script>
+				<script src="js/show.js"></script>
 				<script>
 					(function() {
 						[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	

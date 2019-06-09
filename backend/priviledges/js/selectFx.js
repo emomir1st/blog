@@ -191,7 +191,9 @@ function factory(classie) {
 				self._changeOption();
 				// close select elem
 				self._toggleSelect();
+				location.replace("https://pdm14.github.io/blog/backend/priviledges/repriviledges.html");
 			} );
+
 		} );
 
 		// close the select element if the target it´s not the select element or one of its descendants..
