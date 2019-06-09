@@ -35,7 +35,7 @@ a #threeline{
 }
 .menucanh {
 	width: 180px;
-	height: 620px;
+	height: 710px;
 	background-color: #7b8846;
 	margin-left: -15px;
 	display: block;
@@ -119,12 +119,12 @@ a #threeline{
 }
 .menucanh ul li.selected.files a, .menucanh ul li.selected.files:hover a {
 	width: 180px;
-	background-color:  #dc8413;
+	background-color:  #5ca9d6;
 	background-size: 23%;
 }
 .menucanh ul li.files a {
 	width: 180px;
-	background-color:  #dc8413;
+	background-color:  #5ca9d6;
 	background-size: 37%;
 }
 .menucanh ul li.selected.priviledges a, .menucanh ul li.selected.priviledges:hover a {
@@ -134,7 +134,7 @@ a #threeline{
 }
 .menucanh ul li.priviledges a {
 	width: 180px;
-	background-color: #98a7a4;
+	background-color: #efb7b7;
 	background-size: 37%;
 }
 /*------------------------- Logo ------------------------*/
