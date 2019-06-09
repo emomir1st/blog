@@ -35,7 +35,7 @@ a #threeline{
 }
 .menucanh {
 	width: 180px;
-	height: 620px;
+	height: 710px;
 	background-color: #7b8846;
 	margin-left: -15px;
 	display: block;
@@ -65,74 +65,76 @@ a #threeline{
 	display: block;
 	text-decoration: none;
 	text-align: center; 
-	padding-top: 40px;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	font-weight: 500;
 }
 /*.menucanh ul li.bars {
 	background: url(images/bars.png) no-repeat 55px -57px ;
 	}*/
 .menucanh ul li.selected.home a, .menucanh ul li.selected.home:hover a {
 	width: 180px;
-	background:url(../images/nav-icon.png) no-repeat 72px -81px #7b8846;
+	background-color: #7b8846;
 	background-size: 23%;
 }
 .menucanh ul li.selected.roles a, .menucanh ul li.selected.roles:hover a {
 	width: 180px;
-	background:url(../images/nav-icon.png) no-repeat 55px -57px #7b8846;
+	background-color: #7b8846;
 	background-size: 23%;
 }
 .menucanh ul li.roles a {
 	width: 180px;
-	background:url(../images/nav-icon.png) no-repeat 73px -168px #cba200;
+	background-color: #cba200;
 	background-size: 23%;
 }
 .menucanh ul li.selected.categories a, .menucanh ul li.selected.categories:hover a {
 	width: 180px;
-	background:url(../images/nav-icon.png) no-repeat 33px -163px #7b8846;
+	background-color: #7b8846;
 	background-size: 23%;
 }
 .menucanh ul li.categories a {
 	width: 180px;
-	background:url(../images/nav-icon.png) no-repeat 73px -357px #c0ac66;
+	background-color: #c0ac66;
 	background-size: 23%;
 }
 .menucanh ul li.selected.posts a, .menucanh ul li.selected.posts:hover a {
 	width: 180px;
-	background:url(../images/nav-icon.png) no-repeat 55px -57px #aec066;
+	background-color: #aec066;
 	background-size: 23%;
 }
 .menucanh ul li.posts a {
 	width: 180px;
-	background:url(../images/nav-icon.png) no-repeat 71px -532px #aec066;
+	background-color: #aec066;
 	background-size: 23%;
 }
 .menucanh ul li.selected.users a, .menucanh ul li.selected.users:hover a {
 	width: 180px;
-	background:url(../images/users.png) no-repeat 55px -57px #528846;
+	background-color:  #528846;
 	background-size: 37%;
 }
 .menucanh ul li.users a {
 	width: 180px;
-	background: url(../images/users.png) no-repeat 59px -1px #528846;
+	background-color:  #528846;
 	background-size: 37%;
 }
 .menucanh ul li.selected.files a, .menucanh ul li.selected.files:hover a {
 	width: 180px;
-	background:url(../images/files.png) no-repeat 58px -4px #dc8413;
+	background-color:  #5ca9d6;
 	background-size: 23%;
 }
 .menucanh ul li.files a {
 	width: 180px;
-	background: url(../images/files.png) no-repeat 56px -6px #dc8413;
+	background-color:  #5ca9d6;
 	background-size: 37%;
 }
 .menucanh ul li.selected.priviledges a, .menucanh ul li.selected.priviledges:hover a {
 	width: 180px;
-	background:url(../images/priviledges.png) no-repeat 55px -57px #7b8846;
+	background-color:  #7b8846;
 	background-size: 23%;
 }
 .menucanh ul li.priviledges a {
 	width: 180px;
-	background: url(../images/priviledges.png) no-repeat 55px -9px #98a7a4;
+	background-color: #efb7b7;
 	background-size: 37%;
 }
 /*------------------------- Logo ------------------------*/
